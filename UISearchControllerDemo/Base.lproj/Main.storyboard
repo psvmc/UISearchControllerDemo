@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UV3-Ww-iai">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--搜索测试-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISearchControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-hI-Mws">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1SU-Sd-Pas">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1SU-Sd-Pas" firstAttribute="top" secondItem="e0h-hI-Mws" secondAttribute="top" id="4Hh-83-r7r"/>
+                                    <constraint firstItem="1SU-Sd-Pas" firstAttribute="leading" secondItem="e0h-hI-Mws" secondAttribute="leading" id="GDu-2s-f8c"/>
+                                    <constraint firstAttribute="bottom" secondItem="1SU-Sd-Pas" secondAttribute="bottom" id="Weg-lz-anD"/>
+                                    <constraint firstAttribute="trailing" secondItem="1SU-Sd-Pas" secondAttribute="trailing" id="mzr-1u-pQG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e0h-hI-Mws" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LgZ-gq-x8f"/>
+                            <constraint firstItem="e0h-hI-Mws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Muo-SP-QJW"/>
+                            <constraint firstItem="e0h-hI-Mws" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="hTH-Jc-fwL"/>
+                            <constraint firstItem="e0h-hI-Mws" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w7k-NC-sg2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜索测试" id="CWh-ql-U3s"/>
+                    <connections>
+                        <outlet property="tableView" destination="1SU-Sd-Pas" id="MDX-0y-GIY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mMj-ER-3sg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UV3-Ww-iai" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aX3-hG-kpe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="D6B-bM-rkG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhp-FP-Mga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="378"/>
+        </scene>
+    </scenes>
+</document>
